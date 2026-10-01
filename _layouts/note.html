@@ -12,4 +12,4 @@ layout: default
 {% if site.garden.show_backlinks %}{% include backlinks.html %}{% endif %}
 </article></main>
 <aside class="rail">{% if page.toc != false and site.garden.show_toc %}<div class="panel"><div class="t-label">On this page</div><ol id="toc" class="toc"></ol></div>{% endif %}
-<div class="panel"><div class="t-label">Details</div><dl class="kv"><dt>collection</dt><dd>{{ page.collection }}</dd>{% if page.status %}<dt>status</dt><dd>{{ page.status }}</dd>{% endif %}<dt>words</dt><dd>{{ page.content | number_of_words }}</dd><dt>source</dt><dd><a href="{{ page.path }}">{{ page.path }}</a></dd></dl></div></aside>
+<div class="panel"><div class="t-label">Details</div><dl class="kv"><dt>collection</dt><dd>{{ page.collection }}</dd>{% if page.status %}<dt>status</dt><dd>{{ page.status }}</dd>{% endif %}<dt>words</dt><dd>{{ page.content | number_of_words }}</dd><dt>source</dt><dd>{{ page.path }}</dd></dl></div></aside>

@@ -5,6 +5,7 @@ author: Your Name
 url: ""
 baseurl: ""
 markdown: kramdown
+excerpt_separator: ""
 kramdown: {input: GFM, hard_wrap: false}
 permalink: /:categories/:title/
 collections:

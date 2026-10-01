@@ -12,7 +12,7 @@ tags: [book, placeholder]
 
 ## Takeaways
 1. First idea worth keeping.
-2. Second idea, linked to [Why a digital garden](/essays/why-a-digital-garden/).
+2. Second idea, linked to [Why a digital garden]({{ "/essays/why-a-digital-garden/" | relative_url }}).
 
 ## Quotes
 > Short quote here.
