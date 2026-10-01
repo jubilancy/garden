@@ -1,0 +1,4 @@
+---
+layout: null
+---
+[{% assign pub = site.documents | where_exp: "d","d.draft != true" %}{% for d in pub %}{"title":{{ d.title | jsonify }},"url":{{ d.url | relative_url | jsonify }},"tags":{{ d.tags | jsonify }},"text":{{ d.content | strip_html | strip_newlines | truncate: 400 | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}]

@@ -1,0 +1,6 @@
+notes: {title: Notes, blurb: Atomic, linked ideas. The core of the garden.}
+essays: {title: Essays, blurb: Longer pieces that have been pruned and finished.}
+log: {title: Log, blurb: Dated entries. Time-ordered, rarely revised.}
+projects: {title: Projects, blurb: Things being built, with status.}
+reading: {title: Reading, blurb: Notes on books, papers, talks.}
+glossary: {title: Glossary, blurb: Short definitions linked from everywhere.}

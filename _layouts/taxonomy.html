@@ -1,0 +1,9 @@
+---
+layout: default
+---
+{% assign pub = site.documents | where_exp: "d","d.draft != true" %}
+{% if page.kind == "tags" %}{% assign docs = pub | where_exp: "d","d.tags contains page.term" %}{% else %}{% assign docs = pub | where_exp: "d","d.topics contains page.term" %}{% endif %}
+{% assign docs = docs | sort: "date" | reverse %}
+<main class="main"><div class="panel panel-accent doc"><div class="t-label"><a href="{{ '/tags/' | relative_url }}">{{ page.kind }}</a></div><h1 class="t-title">{{ page.title }}</h1><div class="count">{{ docs.size }} document{% if docs.size != 1 %}s{% endif %}</div>
+{% assign stages = docs | map: "collection" | uniq %}<div class="tax-head">{% for c in stages %}<span class="btn btn-chip">{{ c }} · {{ docs | where: "collection", c | size }}</span>{% endfor %}</div>
+{% include doc-list.html docs=docs %}</div></main>

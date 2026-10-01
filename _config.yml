@@ -1,0 +1,39 @@
+title: Digital Garden
+tagline: notes in progress, tended in public
+description: A monospace digital garden template for Jekyll.
+author: Your Name
+url: ""
+baseurl: ""
+markdown: kramdown
+kramdown: {input: GFM, hard_wrap: false}
+permalink: /:categories/:title/
+collections:
+  notes: {output: true, permalink: /notes/:path/}
+  essays: {output: true, permalink: /essays/:path/}
+  log: {output: true, permalink: /log/:path/}
+  projects: {output: true, permalink: /projects/:path/}
+  reading: {output: true, permalink: /reading/:path/}
+  glossary: {output: true, permalink: /glossary/:path/}
+defaults:
+  - scope: {path: ""}
+    values: {layout: page}
+  - scope: {path: "", type: notes}
+    values: {layout: note, stage: seedling}
+  - scope: {path: "", type: essays}
+    values: {layout: note, stage: evergreen}
+  - scope: {path: "", type: log}
+    values: {layout: note}
+  - scope: {path: "", type: projects}
+    values: {layout: note}
+  - scope: {path: "", type: reading}
+    values: {layout: note}
+  - scope: {path: "", type: glossary}
+    values: {layout: note}
+# collection labels used in the sidebar and lists
+garden:
+  collections: [notes, essays, log, projects, reading, glossary]
+  stages: [seedling, budding, evergreen]
+  show_backlinks: true
+  show_toc: true
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, vendor]
+plugins: [jekyll-sitemap, jekyll-feed]

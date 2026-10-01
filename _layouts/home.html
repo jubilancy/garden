@@ -1,0 +1,8 @@
+---
+layout: default
+---
+<main class="main"><div class="panel panel-accent doc"><h1 class="t-title">{{ site.title }}</h1><p class="t-lead">{{ site.description }}</p><div class="prose">{{ content }}</div>
+{% assign pub = site.documents | where_exp: "d","d.draft != true" %}
+<div class="sec"><div class="t-label">Featured</div>{% assign f = pub | where: "featured", true %}{% include doc-list.html docs=f %}</div>
+<div class="sec"><div class="t-label">Recently tended</div>{% assign rec = pub | sort: "date" | reverse | slice: 0, 8 %}{% include doc-list.html docs=rec %}</div>
+<div class="sec"><div class="t-label">Collections</div><div class="grid">{% for c in site.garden.collections %}<a class="panel card" href="{{ '/' | append: c | append: '/' | relative_url }}"><b>{{ site.data.collections[c].title }}</b><span class="t-body">{{ site.data.collections[c].blurb }}</span></a>{% endfor %}</div></div></div></main>

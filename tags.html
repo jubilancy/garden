@@ -1,0 +1,10 @@
+---
+layout: page
+title: Tags & topics
+description: Topics are broad shelves. Tags are specific handles. Every document can have both.
+permalink: /tags/
+---
+{% include taxonomy-all.html %}
+{% assign pub = site.documents | where_exp: "d","d.draft != true" %}
+<h2>Topics</h2>{% for t in all_topics %}<section class="sec" id="topic-{{ t | slugify }}"><div class="t-label"><a href="{{ '/topics/' | append: t | slugify | append: '/' | relative_url }}">{{ t }}</a></div>{% assign docs = pub | where_exp: "d","d.topics contains t" %}{% include doc-list.html docs=docs %}</section>{% endfor %}
+<h2>Tags</h2>{% for t in all_tags %}<section class="sec" id="{{ t | slugify }}"><div class="t-label"><a href="{{ '/tags/' | append: t | slugify | append: '/' | relative_url }}">#{{ t }}</a></div>{% assign docs = pub | where_exp: "d","d.tags contains t" %}{% include doc-list.html docs=docs %}</section>{% endfor %}

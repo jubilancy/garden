@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head>{% include head.html %}</head><body>
+<button class="menu btn" onclick="document.getElementById('side').classList.toggle('open')"><i data-lucide="menu"></i></button>
+<div class="shell">{% include sidebar.html %}{{ content }}</div>
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script>window.SEARCH_URL="{{ '/search.json' | relative_url }}";</script>
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script></body></html>

@@ -1,0 +1,11 @@
+<aside class="side" id="side">
+<a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+<div class="side-tag">{{ site.tagline }}</div>
+<input id="q" class="input" type="search" placeholder="SEARCH" autocomplete="off"><ul id="results" class="results"></ul>
+<hr class="rule">
+<nav>{% for n in site.data.navigation.main %}<a class="nav-item{% if page.url == n.url %} on{% endif %}" href="{{ n.url | relative_url }}">{% if n.icon %}<i data-lucide="{{ n.icon }}"></i>{% endif %}{{ n.label }}</a>{% endfor %}</nav>
+<hr class="rule"><div class="t-label">Explore</div>
+<nav>{% for n in site.data.navigation.explore %}<a class="nav-item{% if page.url == n.url %} on{% endif %}" href="{{ n.url | relative_url }}"><i data-lucide="{{ n.icon }}"></i>{{ n.label }}</a>{% endfor %}</nav>
+<div class="side-foot"><button class="btn theme-toggle" id="theme" type="button"><i data-lucide="sun-moon"></i>Theme</button><a class="btn btn-primary" href="{{ '/feed.xml' | relative_url }}"><i data-lucide="rss"></i>Subscribe</a>
+<div class="t-body">© {{ 'now' | date: '%Y' }} {{ site.author }}</div></div>
+</aside>

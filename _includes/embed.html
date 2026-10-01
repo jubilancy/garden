@@ -1,0 +1,23 @@
+{% comment %}
+type: youtube | vimeo | figma | loom | linkcard | codepen | gist | spotify | tweet | iframe | image
+id: provider id (codepen: user/pen-id, gist: user/id, tweet: full tweet url)
+url: for iframe/image; caption, ratio (default 16/9), height
+{% endcomment %}
+{% assign r = include.ratio | default: "16/9" %}
+<figure class="embed">
+{% case include.type %}
+{% when "youtube" %}<div class="frame" style="aspect-ratio:{{ r }}"><iframe src="https://www.youtube-nocookie.com/embed/{{ include.id }}" loading="lazy" allowfullscreen title="{{ include.caption | default: 'YouTube video' }}"></iframe></div>
+{% when "vimeo" %}<div class="frame" style="aspect-ratio:{{ r }}"><iframe src="https://player.vimeo.com/video/{{ include.id }}" loading="lazy" allowfullscreen title="{{ include.caption | default: 'Vimeo video' }}"></iframe></div>
+{% when "codepen" %}{% assign cp = include.id | split: "/" %}<div class="frame" style="height:{{ include.height | default: 400 }}px"><iframe src="https://codepen.io/{{ cp[0] }}/embed/{{ cp[1] }}?default-tab=result" loading="lazy" title="CodePen"></iframe></div>
+{% when "gist" %}<script src="https://gist.github.com/{{ include.id }}.js"></script>
+{% when "spotify" %}<div class="frame" style="height:{{ include.height | default: 152 }}px"><iframe src="https://open.spotify.com/embed/{{ include.id }}" loading="lazy" allow="encrypted-media" title="Spotify"></iframe></div>
+{% when "tweet" %}<blockquote class="twitter-tweet"><a href="{{ include.id }}">{{ include.id }}</a></blockquote><script async src="https://platform.twitter.com/widgets.js"></script>
+{% when "iframe" %}<div class="frame" style="aspect-ratio:{{ r }}"><iframe src="{{ include.url }}" loading="lazy" title="{{ include.caption | default: 'Embedded page' }}"></iframe></div>
+{% when "figma" %}<div class="frame" style="aspect-ratio:{{ r }}"><iframe src="https://www.figma.com/embed?embed_host=garden&url={{ include.url | url_encode }}" loading="lazy" allowfullscreen title="Figma"></iframe></div>
+{% when "loom" %}<div class="frame" style="aspect-ratio:{{ r }}"><iframe src="https://www.loom.com/embed/{{ include.id }}" loading="lazy" allowfullscreen title="Loom"></iframe></div>
+{% when "linkcard" %}<a class="linkcard" href="{{ include.url }}"><b>{{ include.title | default: include.url }}</b>{% if include.description %}<span>{{ include.description }}</span>{% endif %}<span class="t-label">{{ include.url | remove: "https://" | remove: "http://" | split: "/" | first }} ↗</span></a>
+{% when "image" %}<img src="{{ include.url | relative_url }}" alt="{{ include.caption }}" loading="lazy">
+{% else %}<div class="frame ph" style="aspect-ratio:{{ r }}">unknown embed type: {{ include.type }}</div>
+{% endcase %}
+{% if include.caption %}<figcaption class="t-label">{{ include.caption }}</figcaption>{% endif %}
+</figure>

@@ -1,0 +1,15 @@
+---
+layout: default
+---
+{% assign c = page.collection %}
+<main class="main"><article class="panel panel-accent doc">
+<div class="crumbs t-label"><a href="{{ '/' | append: c | append: '/' | relative_url }}">{{ site.data.collections[c].title | default: c }}</a>{% assign parts = page.path | split: "/" %}{% if parts.size > 2 %}{% for p in parts offset:1 limit:parts.size %}{% unless forloop.last %} / {{ p }}{% endunless %}{% endfor %}{% endif %}</div>
+<header><h1 class="t-title">{{ page.title }}</h1>{% if page.description %}<p class="t-lead">{{ page.description }}</p>{% endif %}
+<div class="meta">{% if page.stage %}{% include stage.html stage=page.stage %}{% endif %}{% if page.date %}<span>planted <time>{{ page.date | date: "%b %-d, %Y" }}</time></span>{% endif %}{% if page.updated %}<span>tended <time>{{ page.updated | date: "%b %-d, %Y" }}</time></span>{% endif %}{% if page.series %}<span>series: {{ page.series }}</span>{% endif %}</div></header>
+{% if page.cover %}<img class="cover" src="{{ page.cover | relative_url }}" alt="">{% endif %}
+<div class="prose" id="prose">{{ content }}</div>
+<div class="sec"><div class="t-label">Filed under</div><div class="chips">{% for t in page.topics %}<a class="btn btn-chip" href="{{ '/topics/' | append: t | slugify | append: '/' | relative_url }}">{{ t }}</a>{% endfor %}{% for t in page.tags %}<a class="btn btn-chip" href="{{ '/tags/' | append: t | slugify | append: '/' | relative_url }}">#{{ t }}</a>{% endfor %}</div></div>
+{% if site.garden.show_backlinks %}{% include backlinks.html %}{% endif %}
+</article></main>
+<aside class="rail">{% if page.toc != false and site.garden.show_toc %}<div class="panel"><div class="t-label">On this page</div><ol id="toc" class="toc"></ol></div>{% endif %}
+<div class="panel"><div class="t-label">Details</div><dl class="kv"><dt>collection</dt><dd>{{ page.collection }}</dd>{% if page.status %}<dt>status</dt><dd>{{ page.status }}</dd>{% endif %}<dt>words</dt><dd>{{ page.content | number_of_words }}</dd><dt>source</dt><dd><a href="{{ page.path }}">{{ page.path }}</a></dd></dl></div></aside>

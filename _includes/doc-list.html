@@ -1,0 +1,2 @@
+{% comment %}include doc-list.html docs=array{% endcomment %}
+<ul class="list">{% for d in include.docs %}<li><a href="{{ d.url | relative_url }}"><span class="li-title">{{ d.title }}</span>{% if d.description %}<span class="li-desc">{{ d.description }}</span>{% endif %}</a><span class="li-meta">{% if d.stage %}{% include stage.html stage=d.stage %}{% endif %}<time>{{ d.updated | default: d.date | date: "%b %-d, %Y" }}</time></span></li>{% endfor %}</ul>

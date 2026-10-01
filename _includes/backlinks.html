@@ -1,0 +1,3 @@
+{% assign me = page.url %}
+{% assign back = site.documents | where_exp: "d","d.url != me" | where_exp: "d","d.draft != true" | where_exp: "d","d.content contains me" %}
+{% if back.size > 0 %}<section class="sec"><div class="t-label">Linked from</div>{% include doc-list.html docs=back %}</section>{% endif %}

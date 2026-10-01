@@ -1,0 +1,8 @@
+---
+layout: page
+title: Growth stages
+description: How finished is each note? Seedlings are rough, budding notes are taking shape, evergreen notes are maintained.
+permalink: /stages/
+---
+{% assign pub = site.documents | where_exp: "d","d.draft != true" %}
+{% for s in site.garden.stages %}<section class="sec"><div class="t-label">{% include stage.html stage=s %}</div>{% assign docs = pub | where: "stage", s %}{% include doc-list.html docs=docs %}</section>{% endfor %}

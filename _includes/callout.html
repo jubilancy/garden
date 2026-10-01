@@ -1,0 +1,1 @@
+{% assign t = include.type | default: "note" %}<div class="callout callout-{{ t }}"><div class="t-label">{{ include.title | default: t }}</div><div>{{ include.text | markdownify }}</div></div>

@@ -1,0 +1,13 @@
+main:
+  - {label: Home, url: /}
+  - {label: Notes, url: /notes/, icon: sprout}
+  - {label: Essays, url: /essays/, icon: file-text}
+  - {label: Log, url: /log/, icon: clock}
+  - {label: Projects, url: /projects/, icon: rocket}
+  - {label: Reading, url: /reading/, icon: library}
+  - {label: Glossary, url: /glossary/, icon: message-square}
+explore:
+  - {label: Tags, url: /tags/, icon: tag}
+  - {label: Stages, url: /stages/, icon: leaf}
+  - {label: Now, url: /now/, icon: clock}
+  - {label: About, url: /about/, icon: user}
