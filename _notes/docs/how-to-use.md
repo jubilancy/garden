@@ -30,9 +30,9 @@ stage: seedling
 topics: [thinking]
 tags: [draft]
 ---
-Write here. Link to [another note](/notes/docs/about-this-theme/).
+Write here. Link to [another note]({{ "/notes/docs/about-this-theme/" | relative_url }}).
 ```
 It appears at `/notes/my-first-idea/`, in the tag index, and on the home page.
 
-See [Front matter reference](/notes/docs/front-matter-reference/) for every field.
+See [Front matter reference]({{ "/notes/docs/front-matter-reference/" | relative_url }}) for every field.
 {% endraw %}

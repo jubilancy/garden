@@ -7,5 +7,5 @@ topics: [docs]
 tags: [glossary]
 ---
 {% raw %}
-Definition pages are short and stable. Link to them from other notes so they collect backlinks, for example from [Taxonomy guide](/notes/docs/taxonomy-guide/).
+Definition pages are short and stable. Link to them from other notes so they collect backlinks, for example from [Taxonomy guide]({{ "/notes/docs/taxonomy-guide/" | relative_url }}).
 {% endraw %}

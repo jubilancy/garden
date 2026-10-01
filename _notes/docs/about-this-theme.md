@@ -24,5 +24,5 @@ Monospace type, white ground, near-black ink, hairline borders, zero radius, no 
 - Embed and callout includes
 - Client-side search and an auto-built table of contents
 
-Next: [How to use it](/notes/docs/how-to-use/).
+Next: [How to use it]({{ "/notes/docs/how-to-use/" | relative_url }}).
 {% endraw %}

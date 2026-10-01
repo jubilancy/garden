@@ -10,10 +10,10 @@ tags: [linking, backlinks]
 {% raw %}
 Link with ordinary Markdown links to the final URL: `[About this theme](/notes/docs/about-this-theme/)`.
 
-At build time `backlinks.html` scans every document for the current page's URL and lists matches under **Linked from**. Check the bottom of [About this theme](/notes/docs/about-this-theme/): this note appears there.
+At build time `backlinks.html` scans every document for the current page's URL and lists matches under **Linked from**. Check the bottom of [About this theme]({{ "/notes/docs/about-this-theme/" | relative_url }}): this note appears there.
 
 ## Caveats
 - Backlinks match on the full URL string, so write links in full.
-- With thousands of notes the scan slows builds. See [Scaling your garden](/notes/docs/scaling-your-garden/).
+- With thousands of notes the scan slows builds. See [Scaling your garden]({{ "/notes/docs/scaling-your-garden/" | relative_url }}).
 - Disable globally with `garden.show_backlinks: false`.
 {% endraw %}

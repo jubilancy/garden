@@ -25,5 +25,5 @@ A table works too:
 | Finished | Maturing |
 | Posts | Notes |
 
-Related: [About this theme](/notes/docs/about-this-theme/).
+Related: [About this theme]({{ "/notes/docs/about-this-theme/" | relative_url }}).
 {% endraw %}
