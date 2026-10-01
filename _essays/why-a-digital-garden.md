@@ -1,10 +1,10 @@
 ---
-title: Why a digital garden
-description: Sample essay: the case for publishing unfinished thinking.
+title: "Why a digital garden"
+description: "Sample essay: the case for publishing unfinished thinking."
 date: 2026-09-20
 updated: 2026-09-28
 stage: evergreen
-series: Placeholder series
+series: "Placeholder series"
 topics: [thinking]
 tags: [essay, writing]
 ---

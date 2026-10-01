@@ -1,6 +1,6 @@
 ---
-title: Backlinks and linking
-description: How notes connect without a plugin.
+title: "Backlinks and linking"
+description: "How notes connect without a plugin."
 date: 2026-10-01
 updated: 2026-10-01
 stage: budding

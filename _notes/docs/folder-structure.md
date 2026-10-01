@@ -1,6 +1,6 @@
 ---
-title: Folder structure
-description: Where everything lives, and how folders become URLs.
+title: "Folder structure"
+description: "Where everything lives, and how folders become URLs."
 date: 2026-10-01
 updated: 2026-10-01
 stage: evergreen

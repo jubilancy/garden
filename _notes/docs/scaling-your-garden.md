@@ -1,6 +1,6 @@
 ---
-title: Scaling your garden
-description: What to do at 100, 1,000 and 10,000 notes.
+title: "Scaling your garden"
+description: "What to do at 100, 1,000 and 10,000 notes."
 date: 2026-10-01
 updated: 2026-10-01
 stage: budding

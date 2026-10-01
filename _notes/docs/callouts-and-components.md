@@ -1,6 +1,6 @@
 ---
-title: Callouts and components
-description: Callouts, stage badges and doc lists you can drop into any note.
+title: "Callouts and components"
+description: "Callouts, stage badges and doc lists you can drop into any note."
 date: 2026-10-01
 updated: 2026-10-01
 stage: budding

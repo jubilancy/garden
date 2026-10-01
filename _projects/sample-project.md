@@ -1,6 +1,6 @@
 ---
-title: Sample project
-description: Project pages carry a status and links out.
+title: "Sample project"
+description: "Project pages carry a status and links out."
 date: 2026-08-15
 updated: 2026-09-30
 stage: budding

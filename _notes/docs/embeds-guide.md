@@ -1,6 +1,6 @@
 ---
-title: Embeds guide
-description: Video, code, audio, tweets and arbitrary iframes with one include.
+title: "Embeds guide"
+description: "Video, code, audio, tweets and arbitrary iframes with one include."
 date: 2026-10-01
 updated: 2026-10-01
 stage: evergreen

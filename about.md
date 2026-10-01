@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-description: Who tends this garden.
+title: "About"
+description: "Who tends this garden."
 permalink: /about/
 ---
 {% raw %}

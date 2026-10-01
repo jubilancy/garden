@@ -1,6 +1,6 @@
 ---
-title: How to use it
-description: From clone to first published note in ten minutes.
+title: "How to use it"
+description: "From clone to first published note in ten minutes."
 date: 2026-10-01
 updated: 2026-10-01
 stage: evergreen

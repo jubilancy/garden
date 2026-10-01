@@ -1,6 +1,6 @@
 ---
-title: Taxonomy guide
-description: Collections, folders, topics, tags and stages: when to use which.
+title: "Taxonomy guide"
+description: "Collections, folders, topics, tags and stages: when to use which."
 date: 2026-10-01
 updated: 2026-10-01
 stage: budding

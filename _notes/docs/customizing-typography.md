@@ -1,6 +1,6 @@
 ---
-title: Customizing typography
-description: Swapping the mono font and tuning the scale.
+title: "Customizing typography"
+description: "Swapping the mono font and tuning the scale."
 date: 2026-10-01
 updated: 2026-10-01
 stage: budding

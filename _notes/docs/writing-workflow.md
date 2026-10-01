@@ -1,6 +1,6 @@
 ---
-title: Writing workflow
-description: A low-friction loop for planting and tending notes.
+title: "Writing workflow"
+description: "A low-friction loop for planting and tending notes."
 date: 2026-10-01
 updated: 2026-10-01
 stage: seedling

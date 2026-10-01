@@ -1,6 +1,6 @@
 ---
-title: About this theme
-description: What this garden template is, who it is for, and the ideas behind it.
+title: "About this theme"
+description: "What this garden template is, who it is for, and the ideas behind it."
 date: 2026-10-01
 updated: 2026-10-01
 stage: evergreen

@@ -1,9 +1,9 @@
 ---
-title: Sample book note
-description: Reading notes: author, takeaways, quotes.
+title: "Sample book note"
+description: "Reading notes: author, takeaways, quotes."
 date: 2026-07-04
 stage: budding
-author: Author Name
+author: "Author Name"
 topics: [reading]
 tags: [book, placeholder]
 ---

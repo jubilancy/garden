@@ -1,6 +1,6 @@
 ---
-title: Front matter reference
-description: Every field the layouts understand.
+title: "Front matter reference"
+description: "Every field the layouts understand."
 date: 2026-10-01
 updated: 2026-10-01
 stage: evergreen

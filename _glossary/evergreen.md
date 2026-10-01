@@ -1,6 +1,6 @@
 ---
-title: Evergreen
-description: A note that is complete enough to be maintained rather than drafted.
+title: "Evergreen"
+description: "A note that is complete enough to be maintained rather than drafted."
 date: 2026-10-01
 stage: evergreen
 topics: [docs]

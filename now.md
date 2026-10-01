@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Now
-description: What I am focused on at the moment.
+title: "Now"
+description: "What I am focused on at the moment."
 permalink: /now/
 updated: 2026-10-01
 ---

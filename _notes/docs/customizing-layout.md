@@ -1,6 +1,6 @@
 ---
-title: Customizing layout
-description: Sidebar, rail, measure, and removing columns.
+title: "Customizing layout"
+description: "Sidebar, rail, measure, and removing columns."
 date: 2026-10-01
 updated: 2026-10-01
 stage: seedling

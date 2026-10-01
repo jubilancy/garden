@@ -1,6 +1,6 @@
 ---
-title: Deploying
-description: GitHub Pages, Netlify and Cloudflare Pages.
+title: "Deploying"
+description: "GitHub Pages, Netlify and Cloudflare Pages."
 date: 2026-10-01
 updated: 2026-10-01
 stage: budding

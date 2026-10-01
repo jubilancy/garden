@@ -1,6 +1,6 @@
 ---
-title: First entry
-description: Sample log: the garden is planted.
+title: "First entry"
+description: "Sample log: the garden is planted."
 date: 2026-10-01
 topics: [meta]
 tags: [log]

@@ -1,6 +1,6 @@
 ---
-title: Second entry
-description: Sample log: tending.
+title: "Second entry"
+description: "Sample log: tending."
 date: 2026-10-08
 topics: [meta]
 tags: [log]
